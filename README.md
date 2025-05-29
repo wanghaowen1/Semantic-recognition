@@ -20,29 +20,33 @@
 ---
 
 ## 📁 文件结构# Semantic-recognition
-├── final.py # 主程序代码
-├── train_loss_curve.png # 微调损失曲线图
-├── DATA # QQP 数据集
-    ├──train.tsv 
-    ├── dev.tsv 
-    ├──test.tsv 
-├── finetuned_sbert_model # 微调后的 SBERT 模型文件夹
-├──paraphrase-MiniLM-L6-v2 # 预训练的 SBERT 模型文件夹
-└── README.md # 项目说明文件
+- ├── final.py # 主程序代码
+- ├── train_loss_curve.png # 微调损失曲线图
+- ├── DATA # QQP 数据集
+  -    ├──train.tsv 
+  -    ├── dev.tsv 
+  -    ├──test.tsv 
+- ├── finetuned_sbert_model # 微调后的 SBERT 模型文件夹
+- ├──paraphrase-MiniLM-L6-v2 # 预训练的 SBERT 模型文件夹
+- └── README.md # 项目说明文件
+  
+---
 
 ## 环境配置说明
-Python 3.7 及以上（建议使用 Python 3.8+）
-sentence-transformers>=2.2.2
-scikit-learn>=1.0
-torch>=1.10
-numpy>=1.21
-pandas>=1.3
-matplotlib>=3.4
+- Python 3.7 及以上（建议使用 Python 3.8+）
+- sentence-transformers>=2.2.2
+- scikit-learn>=1.0
+- torch>=1.10
+- numpy>=1.21
+- pandas>=1.3
+- matplotlib>=3.4
+  
+---
 
 ## 代码运行流程说明
-1.加载训练、验证与测试集（TSV 格式）
-2.加载或微调 SBERT 模型
-3.计算句向量，构造特征向量
-4.两种相似度判别策略评估
-5.测试集预测并保存
-6.命令行交互检测
+- 1.加载训练、验证与测试集（TSV 格式）
+- 2.加载或微调 SBERT 模型
+- 3.计算句向量，构造特征向量
+- 4.两种相似度判别策略评估
+- 5.测试集预测并保存
+- 6.命令行交互检测
